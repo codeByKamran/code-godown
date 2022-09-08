@@ -1,0 +1,92 @@
+@tailwind components;
+
+@layer components {
+  /* Custom Classes */
+
+  .flex-center-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between-center {
+    @apply flex justify-between items-center;
+  }
+
+  .flex-evenly-center {
+    @apply flex justify-evenly items-center;
+  }
+
+  .divider::before {
+    height: 2px;
+    background: gray;
+    width: 20px;
+  }
+
+  .font-primary {
+    font-family: "Inter", "Roboto", sans-serif;
+  }
+
+  .color-primary {
+    color: var(--primary);
+  }
+
+  .color-primary-dark {
+    color: var(--primary-dark);
+  }
+
+  .color-primary-light {
+    color: var(--primary-light);
+  }
+
+  .dark-bg {
+    background-color: var(--background-main);
+  }
+
+  .dark-bg-light {
+    background-color: var(--background-light);
+  }
+
+  .dark-bg-accent {
+    background-color: var(--background-accent);
+  }
+
+  /* Text */
+
+  .info-text.dark {
+    @apply text-gray-400;
+  }
+  .text-semibold {
+    @apply text-[16px] font-semibold text-gray-800;
+  }
+
+  .text-bold {
+    @apply text-[16px] font-bold text-gray-800;
+  }
+
+  /* Links */
+
+  .link {
+    @apply cursor-pointer font-medium text-gray-500 hover:text-gray-900 flex items-center;
+  }
+
+  .link-bold {
+    @apply hover:underline cursor-pointer text-[14px] font-bold text-gray-800;
+  }
+
+  .link-semibold {
+    @apply hover:underline cursor-pointer text-[14px] font-semibold text-gray-800;
+  }
+
+  .link.dark {
+    @apply text-gray-300 hover:text-gray-400;
+  }
+
+  /* Input */
+
+  .input {
+    @apply py-2 px-3 my-3 bg-transparent rounded-md text-primaryText dark:text-primaryTextDark placeholder:text-infoText dark:placeholder:text-infoTextDark border border-borderColor dark:border-borderColorDark outline-none;
+  }
+
+  .icon {
+    @apply text-gray-500;
+  }
+}

@@ -1,0 +1,37 @@
+Aditions:
+  Add passport.js - social auth
+  Add account page
+  Add settings page
+
+Improvements: 
+  Register/login by username addition
+  Configure readable errors in Auth
+
+Fixes:
+  SSR dashboard pages
+  Add labels to dashboard navigation
+  Dont allow edit code on snippet page
+
+TESTING
+
+1) -- ADDING SNIPPET BEST WAY POSSIBLE
+
+TODOs>
+_add 2 files
+_add label
+_add tags
+_change visibility
+_add snippet
+
+CHECKS>
+_moniter database
+_moniter dashboard behavior
+_monitor ui glitches(bugs)
+_moniter performance - network calls log
+
+BUGS NOTED:
+extra tag gets added if string ended with ,
+
+CODE CLEANUP
+Snippets Archive Grid
+Skeletons
