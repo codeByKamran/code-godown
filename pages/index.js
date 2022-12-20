@@ -7,9 +7,9 @@ export default function Home() {
   useEffect(() => {
     fetch(
       process.env.NODE_ENV === "production"
-        ? "https://codegodown-server.herokuapp.com/"
+        ? "https://codegodown-backend.adaptable.app/"
         : "http://localhost:3500/"
-    );
+    )
   }, []);
 
   return (
